@@ -22,6 +22,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSMicrophoneUsageDescription</key>
+ <string>Description of why you require the use of the microphone</string>
+ <key>NSSpeechRecognitionUsageDescription</key>
+ <string>Description of why you require the use of the speech recognition</string>
+
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
