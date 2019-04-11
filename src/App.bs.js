@@ -44,18 +44,18 @@ function App(Props) {
   var match = React.useState((function () {
           return false;
         }));
-  var dispatch = match[1];
+  var setSpeechInProgress = match[1];
   var match$1 = React.useState((function () {
           return /* array */[];
         }));
   var setSpeech = match$1[1];
   React.useEffect((function () {
           ReactNativeVoice.default.onSpeechStart = (function (param) {
-              console.log("onSpeechStart");
+              console.log("Speech Started");
               return /* () */0;
             });
           ReactNativeVoice.default.onSpeechRecognized = (function (param) {
-              console.log("onSpeechStart");
+              console.log("Speech Recognized");
               return /* () */0;
             });
           ReactNativeVoice.default.onSpeechResults = (function (e) {
@@ -64,7 +64,7 @@ function App(Props) {
                           }));
             });
           ReactNativeVoice.default.onSpeechError = (function (err) {
-              console.log("Speech ERROR (using effect)");
+              console.log("Speech ERROR " + JSON.stringify(err.error));
               return /* () */0;
             });
           return undefined;
@@ -74,16 +74,16 @@ function App(Props) {
                                     return ReasonReact.element(String(index), undefined, Text$BsReactNative.make(undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, /* array */[s]));
                                   }), match$1[0])])),
                   match[0] ? ReasonReact.element(undefined, undefined, Button$BsReactNative.make(undefined, undefined, undefined, (function (param) {
-                                  Curry._1(dispatch, (function (param) {
+                                  Curry._1(setSpeechInProgress, (function (param) {
                                           return false;
                                         }));
                                   ReactNativeVoice.default.stop();
                                   return /* () */0;
                                 }), undefined, "Stop voice recognition")(/* array */[])) : ReasonReact.element(undefined, undefined, Button$BsReactNative.make(undefined, undefined, undefined, (function (param) {
-                                  Curry._1(dispatch, (function (param) {
+                                  Curry._1(setSpeechInProgress, (function (param) {
                                           return true;
                                         }));
-                                  ReactNativeVoice.default.start("us-US");
+                                  ReactNativeVoice.default.start("en-US");
                                   return /* () */0;
                                 }), undefined, "Start voice recognition")(/* array */[]))
                 ]));
