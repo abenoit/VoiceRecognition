@@ -1,18 +1,18 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx '/Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-platform/lib/reactjs_jsx_ppx_2.exe'
-FLG -ppx /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-platform/lib/bsppx.exe
-S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-platform/lib/ocaml
-B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-platform/lib/ocaml
+FLG -ppx '/Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-platform/lib/reactjs_jsx_ppx_3.exe'
+FLG -ppx /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-platform/lib/bsppx.exe
+S /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-platform/lib/ocaml
+B /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -color always
 FLG -w -30-40+6+7+27+32..39+44+45+101
-S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-native/lib/ocaml
-B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-native/lib/ocaml
-S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/reason-react/lib/ocaml
-B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/reason-react/lib/ocaml
-S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/@glennsl/bs-jest/lib/ocaml
-B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/@glennsl/bs-jest/lib/ocaml
-S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-test-renderer/lib/ocaml
-B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-test-renderer/lib/ocaml
+S /Users/dcorticchiato/projects/VoiceRecognition/node_modules/reason-react/lib/ocaml
+B /Users/dcorticchiato/projects/VoiceRecognition/node_modules/reason-react/lib/ocaml
+S /Users/dcorticchiato/projects/VoiceRecognition/node_modules/@glennsl/bs-jest/lib/ocaml
+B /Users/dcorticchiato/projects/VoiceRecognition/node_modules/@glennsl/bs-jest/lib/ocaml
+S /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-react-test-renderer/lib/ocaml
+B /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-react-test-renderer/lib/ocaml
+S /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-react-native/bs-react-native-next/lib/ocaml
+B /Users/dcorticchiato/projects/VoiceRecognition/node_modules/bs-react-native/bs-react-native-next/lib/ocaml
 S src
 B lib/bs/src
 S src/__tests__

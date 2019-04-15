@@ -1,4 +1,4 @@
-open BsReactNative;
+open ReactNative;
 
 [@react.component]
 let make = () => {
@@ -16,26 +16,20 @@ let make = () => {
 
   <View>
     <Speech speech />
-    {
-      speechInProgress ?
-        <Button
-          title="Stop voice recognition"
-          onPress={
-            () => {
-              setSpeechInProgress(_ => false);
-              Voice.(voice->stop);
-            }
-          }
-        /> :
-        <Button
-          title="Start voice recognition"
-          onPress={
-            () => {
-              setSpeechInProgress(_ => true);
-              Voice.(start(voice, "en-US"));
-            }
-          }
-        />
-    }
+    {speechInProgress
+       ? <Button
+           title="Stop voice recognition"
+           onPress={() => {
+             setSpeechInProgress(_ => false);
+             Voice.(voice->stop);
+           }}
+         />
+       : <Button
+           title="Start voice recognition"
+           onPress={() => {
+             setSpeechInProgress(_ => true);
+             Voice.(start(voice, "en-US"));
+           }}
+         />}
   </View>;
 };

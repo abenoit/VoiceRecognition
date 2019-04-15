@@ -1,18 +1,20 @@
 {
   "name": "VoiceRecognition",
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
-  "bsc-flags": ["-bs-super-errors"],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
   "bs-dependencies": [
-    "bs-react-native",
     "reason-react",
     "@glennsl/bs-jest",
-    "bs-react-test-renderer"
+    "bs-react-test-renderer",
+    "bs-react-native/bs-react-native-next"
   ],
   "sources": [
     {
@@ -21,5 +23,8 @@
     }
   ],
   "suffix": ".bs.js",
-  "refmt": 3
+  "refmt": 3,
+  "js-post-build": {
+    "cmd": "./node_modules/bs-react-native/git-monorepo-usage-trick"
+  }
 }

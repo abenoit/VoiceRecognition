@@ -1,5 +1,3 @@
-open BsReactNative;
-
 type error = {. "error": Js.Json.t};
 type result = {. "value": array(string)};
 
