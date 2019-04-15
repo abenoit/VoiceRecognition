@@ -1,14 +1,5 @@
 open BsReactNative;
 
-module Styles = {
-  open Style;
-
-  let main = style([flex(1.), height(Pct(100.)), justifyContent(Center)]);
-
-  let speech = style([marginHorizontal(Pt(20.))]);
-  let speechText = style([fontSize(Float(20.))]);
-};
-
 [@react.component]
 let make = () => {
   let (speechInProgress, setSpeechInProgress) = React.useState(() => false);
@@ -23,16 +14,8 @@ let make = () => {
     None;
   });
 
-  <View style=Styles.main>
-    <View style=Styles.speech>
-      {
-        speech
-        |> Array.mapi((index, s) =>
-             <Text key=index->string_of_int> {ReasonReact.string(s)} </Text>
-           )
-        |> ReasonReact.array
-      }
-    </View>
+  <View>
+    <Speech speech />
     {
       speechInProgress ?
         <Button

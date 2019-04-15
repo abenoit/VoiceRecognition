@@ -8,7 +8,12 @@
     "in-source": true
   },
   "bsc-flags": ["-bs-super-errors"],
-  "bs-dependencies": ["bs-react-native", "reason-react"],
+  "bs-dependencies": [
+    "bs-react-native",
+    "reason-react",
+    "@glennsl/bs-jest",
+    "bs-react-test-renderer"
+  ],
   "sources": [
     {
       "dir": "src",

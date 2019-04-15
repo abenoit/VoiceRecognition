@@ -3,7 +3,7 @@
  */
 
 import { AppRegistry } from "react-native";
-import { make as App } from "./src/App.bs";
 import { name as appName } from "./app.json";
+const App = require("./src/App.bs.js").make;
 
 AppRegistry.registerComponent(appName, () => App);

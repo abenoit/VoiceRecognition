@@ -9,6 +9,12 @@ S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-nati
 B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-native/lib/ocaml
 S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/reason-react/lib/ocaml
 B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/reason-react/lib/ocaml
+S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/@glennsl/bs-jest/lib/ocaml
+B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/@glennsl/bs-jest/lib/ocaml
+S /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-test-renderer/lib/ocaml
+B /Users/Sushiii/Workspace/conference/reasonconf/test/node_modules/bs-react-test-renderer/lib/ocaml
 S src
 B lib/bs/src
+S src/__tests__
+B lib/bs/src/__tests__
 ####BSB GENERATED: NO EDIT}
